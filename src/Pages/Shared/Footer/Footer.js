@@ -7,7 +7,7 @@ import { faAddressBook, faMobileAlt, faEnvelopeOpenText } from '@fortawesome/fre
 
 const Footer = () => {
     return (
-        <div className="bg-primary text-white my-5">
+        <div className="bg-dark text-white mt-5">
             <Container>
                 <Row>
                     <Col className="my-5" md={4}>
