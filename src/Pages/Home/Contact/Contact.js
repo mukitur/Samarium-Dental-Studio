@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook, faMobileAlt, faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
@@ -14,9 +15,10 @@ const Contact = () => {
                         <p>Chamber Address:<br/>
                             <FontAwesomeIcon icon={faAddressBook} /> House#20, Road#20, Sector#11, Uttara, Dhaka-1230.</p>
                         <p><FontAwesomeIcon icon={faMobileAlt} /> +880 1518 444 000</p>
-                        <p>Cell: +880 1518 444 001</p>
+                        <p><FontAwesomeIcon icon={faMobileAlt} /> +880 1518 444 001</p>
                         <p><FontAwesomeIcon icon={faEnvelopeOpenText} /> info@samariumdemtal.com</p>
-                        <h4>HotLine: +880 1765 000 000</h4>
+                        <h4 className="text-danger">HotLine/Emergency: +880 1765 000 000</h4>
+                        For Appointments:<Link to ={'/appoinments'}> Click Here</Link>
                     </Col>
                     <Col></Col>
                 </Row>
