@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../../images/logo.png';
 import { Button } from 'react-bootstrap';
-import googleIcon from '../../../images/google-icon.png'
+import googleIcon from '../../../images/google-icon.png';
 import useAuth from '../../../hooks/useAuth';
 
 
