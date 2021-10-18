@@ -1,16 +1,17 @@
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, Row } from 'react-bootstrap';
 import img2 from '../../../../images/equipments/Autoclave.jpg';
 import img3 from '../../../../images/equipments/Composite.jpeg';
 import img5 from '../../../../images/equipments/Protaper-Machine.jpeg';
 import img6 from '../../../../images/equipments/X-Ray-RVG.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDotCircle, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faDotCircle, faCheckCircle, faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Equipments = () => {
     return (
         <div>
-            <h2 className="my-5">Equipments We Use</h2>
+            <h2 className="my-5 text-warning">Equipments We Use</h2>
             <Row className="mx-5">
                 <Col>
                     <Card className="border-white">
@@ -45,7 +46,7 @@ const Equipments = () => {
                     </Card>
                 </Col>    
             </Row>
-            <h2 className="my-5">Our Healthy Teeth Treatments are:</h2>
+            <h2 className="my-5 text-warning">Our Healthy Teeth Treatments are:</h2>
             <Row className="mx-5">
                 <Col>
                     <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
@@ -67,10 +68,11 @@ const Equipments = () => {
                     <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
                     <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
                     <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage
-                </Col>    
-                 
+                </Col>     
             </Row>
-            
+            <Link to ="/appoinments">
+                <Button className="my-5" variant="warning"> <FontAwesomeIcon icon={faCalendarCheck} /> Book For Appoinment</Button>
+            </Link>
         </div>
     );
 };
