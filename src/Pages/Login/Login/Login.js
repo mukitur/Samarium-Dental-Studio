@@ -10,9 +10,10 @@ const Login = () => {
     const {signInWithGoogle} = useFirebase();
     return (
         <div>
-            <img className = "my-5" src = {logo} alt=""/>
+            <h2 className = "mt-5">Welcome to Samarium Dental Studio</h2>
+            <img className = "mb-5" src = {logo} alt=""/>
             <h2>email/pass Login</h2>
-            
+
             <div className="my-5">---------or---------</div>
 
             <Button onClick={signInWithGoogle} variant="light"> <img src ={googleIcon} alt=""/> LOGIN </Button>
