@@ -9,6 +9,7 @@ This a Dental clinic website. This dental clinic has experienced doctor to serve
 * React Bootstrap
 * React Router
 * Firebase for Authentication
+* Use Context API
 * Font Awesome
-* Use React Hook Form for Appoinment
+* Use React Hook Form for Appointment
 
