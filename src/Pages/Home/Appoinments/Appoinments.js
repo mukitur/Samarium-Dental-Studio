@@ -25,7 +25,7 @@ const Appoinments = () => {
                         <input placeholder="phone number" defaultValue="" {...register("phone")} />
                         <input placeholder="Problem You Facing" defaultValue="" {...register("Problem Details")} />
                         <input placeholder="Date & Time" defaultValue="" {...register("Date")} />
-                        <input type="submit" defaultValue="" {...register("Get Appointment")}/>
+                        <input type="submit"/>
                     </form>       
                 </Col>
                 <Col></Col>
