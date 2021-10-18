@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Service from '../Home/Service/Service';
 
 const Services = () => {
@@ -23,8 +23,8 @@ const Services = () => {
                     </Row>
                 </Container>
             </div>
-            <div>
-                <Row xs={2} md={3} className="g-4">
+            <div className ="mx-5">
+                <Row xs={1} md={3} className="g-4">
                     {
                         services.map(service => <Service
                             key= {service.id}
