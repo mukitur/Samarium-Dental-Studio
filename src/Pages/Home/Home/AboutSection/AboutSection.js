@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import homeAboutSectionImg from '../../../../images/home-about-section.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faUserMd } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
@@ -22,7 +22,7 @@ const AboutSection = () => {
                         <FontAwesomeIcon icon={faCheckCircle} /> We have latest facilities and dental equipment  <br/><br/>
                         <FontAwesomeIcon icon={faCheckCircle} /> We provide quality dental materials to suit your needs<br/><br/>
                         <FontAwesomeIcon icon={faCheckCircle} /> Nervous and aged patients are handled with care <br/> <br/><br/>
-                        <Link to = "/doctors"> <Button variant="warning">Show Doctors</Button></Link>
+                        <Link to = "/doctors"> <Button variant="warning"> <FontAwesomeIcon icon={faUserMd} /> Show Doctors</Button></Link>
                         </h5>
                     </Col>
                 </Row>
