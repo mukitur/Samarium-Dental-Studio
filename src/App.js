@@ -9,6 +9,8 @@ import Contact from './Pages/Home/Contact/Contact';
 import NotFound from './Pages/NotFound/NotFound';
 import Appoinments from './Pages/Home/Appoinments/Appoinments';
 import Doctors from './Pages/Home/Doctors/Doctors';
+import Services from './Pages/Home/Services/Services';
+import DetailService from './Pages/Home/Home/DetailService/DetailService';
 
 function App() {
   return (
@@ -24,6 +26,12 @@ function App() {
           </Route>
           <Route path="/about">
             <About></About>
+          </Route>
+          <Route path = "/services">
+            <Services></Services>
+          </Route>
+          <Route path='/detailservice/:serviceId'>
+              <DetailService></DetailService>
           </Route>
           <Route path="/contact">
             <Contact></Contact>
