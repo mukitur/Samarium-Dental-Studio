@@ -11,6 +11,7 @@ import Appoinments from './Pages/Home/Appoinments/Appoinments';
 import Doctors from './Pages/Home/Doctors/Doctors';
 import Services from './Pages/Home/Services/Services';
 import DetailService from './Pages/Home/Home/DetailService/DetailService';
+import Login from './Pages/Login/Login/Login';
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route path="/doctors">
               <Doctors></Doctors>
+          </Route>
+          <Route path ="/login">
+              <Login></Login>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
