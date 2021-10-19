@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const DetailService = () => {
