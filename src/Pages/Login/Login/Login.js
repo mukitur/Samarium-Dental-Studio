@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import logo from '../../../images/logo.png';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import googleIcon from '../../../images/google-icon.png';
@@ -6,7 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 import { useHistory, useLocation } from 'react-router-dom';
 
 const Login = () => {
-    const {signInWithGoogle, password, email, handleEmailChange, handlePasswordChange, signInWithPassword } = useAuth();
+    const {signInWithGoogle, handleEmailChange, handlePasswordChange, registerWithPassword, error,isLogin, toggleLogin } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
@@ -18,7 +17,6 @@ const Login = () => {
             history.push(redirect_uri)  
         })   
     }
-    
     // email login process starts
     
 
@@ -33,7 +31,8 @@ const Login = () => {
                 <Row>
                     <Col></Col>
                     <Col>
-                        <form onSubmit={signInWithPassword}>
+                        <form onSubmit={registerWithPassword}>
+                            <h3 className="text-primary text-start"> Please {isLogin ? 'Login' : 'register'}</h3>
                             <div className="row mb-3">
                                 <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                                 <div className="col-sm-10">
@@ -48,15 +47,16 @@ const Login = () => {
                             </div>
                             <div className="row mb-3">
                                 <div className="col-sm-10 offset-sm-2">
-                                <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="gridCheck1"/>
-                                    <label className="form-check-label" htmlFor="gridCheck1">
-                                    Example checkbox
+                                <div className="form-check text-start text-primary">
+                                    <input onChange={toggleLogin} className="form-check-input" type="checkbox" id="gridCheck1"/>
+                                    <label className="form-check-label text-start" htmlFor="gridCheck1">
+                                        Already Registered?
                                     </label>
                                 </div>
                                 </div>
                             </div>
-                            <button type="submit" className="btn btn-primary">Register</button>
+                            <div className="my-2 text-danger">{error} </div>
+                            <button type="submit" className="btn btn-primary"> { isLogin ? 'Login' : 'Register'}</button>
                         </form>
                     </Col>
                     <Col></Col>

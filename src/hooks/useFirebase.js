@@ -15,6 +15,11 @@ const useFirebase = () => {
 
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
+    const [isLogin, setIsLogin] = useState(false);
+
+    const toggleLogin = e=>{
+        setIsLogin(e.target.checked);
+    }
 
     const handleEmailChange = e => {
         setEmail(e.target.value);
@@ -24,12 +29,20 @@ const useFirebase = () => {
         setPassword(e.target.value)
       }
 
-      const signInWithPassword = e => {
+      const registerWithPassword = e => {
         e.preventDefault()
+        //check password lenth
+        if(password.length < 6){
+            setError('Password Length should be at least 6 character ');
+            return;
+        }
+        setIsLoading(true);
         console.log(email, password)
        createUserWithEmailAndPassword(auth, email, password)
         .then(result=>{
+
         })
+    
     }
 
 
@@ -49,6 +62,7 @@ const useFirebase = () => {
             })
             .finally( () => setIsLoading(false))
     }
+
     useEffect(() => {
         onAuthStateChanged(auth, user => {
             if (user) {
@@ -65,7 +79,7 @@ const useFirebase = () => {
             signInWithGoogle,
             logout,
             isLoading,
-            password, email, handleEmailChange, handlePasswordChange, signInWithPassword
+            password, email, handleEmailChange, handlePasswordChange, registerWithPassword, isLogin, toggleLogin
         }
     );
 };
