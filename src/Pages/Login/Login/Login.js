@@ -22,25 +22,22 @@ const Login = () => {
 
     return (
         <div>
-            <h2 className = "mt-5">Welcome to Samarium Dental Studio</h2>
-            <img className = "mb-5" src = {logo} alt=""/>
-            <h2>email/pass Login</h2>
+            <img className = "mt-4" src = {logo} alt=""/>
+            <h2 className = "mb-5">Please Login either Email/Password or Google</h2>
 
             
             <Container>
                 <Row>
                     <Col></Col>
-                    <Col>
+                    <Col sm={6}>
                         <form onSubmit={registerWithPassword}>
                             <h3 className="text-primary text-start"> Please {isLogin ? 'Login' : 'register'}</h3>
                             <div className="row mb-3">
-                                <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                                 <div className="col-sm-10">
                                 <input onBlur={handleEmailChange} placeholder="Enter a valid Email" type="email" className="form-control" id="inputEmail3" required/>
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                                 <div className="col-sm-10">
                                 <input onBlur={handlePasswordChange} placeholder="Enter Password" type="password" className="form-control" id="inputPassword3" required/>
                                 </div>
