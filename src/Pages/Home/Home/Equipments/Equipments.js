@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import img2 from '../../../../images/equipments/Autoclave.jpg';
 import img3 from '../../../../images/equipments/Composite.jpeg';
 import img5 from '../../../../images/equipments/Protaper-Machine.jpeg';
@@ -11,8 +11,9 @@ import { Link } from 'react-router-dom';
 const Equipments = () => {
     return (
         <div>
-            <h2 className="my-5 text-warning">Equipments We Use</h2>
-            <Row className="mx-5">
+            <Container>
+            <h2 className="my-5 text-primary">Equipments We Use</h2>
+            <Row>
                 <Col>
                     <Card className="border-white">
                         <Card.Img variant="top" src={img5} />
@@ -46,8 +47,8 @@ const Equipments = () => {
                     </Card>
                 </Col>    
             </Row>
-            <h2 className="my-5 text-warning">Our Healthy Teeth Treatments are:</h2>
-            <Row className="mx-5 text-start">
+            <h2 className="my-5 text-primary">Our Healthy Teeth Treatments are:</h2>
+            <Row className="text-start">
                 <Col>
                     <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
                     <FontAwesomeIcon icon={faDotCircle} /> Intra oral periapical view <br/>
@@ -73,6 +74,7 @@ const Equipments = () => {
             <Link to ="/appoinments">
                 <Button className="my-5" variant="warning"> <FontAwesomeIcon icon={faCalendarCheck} /> Book For Appoinment</Button>
             </Link>
+            </Container>
         </div>
     );
 };

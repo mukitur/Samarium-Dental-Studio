@@ -11,15 +11,20 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col className="my-5" md={4}>
-                        <img className="mb-3" src= {logo} width="auto" height="60" alt=""/>
+                        <p><img className="mb-3" src= {logo} width="auto" height="60" alt=""/></p>
+                        <h3>Your Dental friend beside you.</h3>
+                        <p><small>copyright@2021. All  rights reserved</small></p>
+                        
+
                     </Col>
                     <Col className="my-5 text-start"  md={4}>
                         <h4>Quick Links</h4>
                         <ul>
                             <Link className="text-white" style={{ textDecoration: 'none'}} to ="/about" ><li>About Us</li></Link>
                             <Link className="text-white" style={{ textDecoration: 'none'}} to ="/appoinments" ><li>Appoinments</li></Link>
-                            <Link className="text-white" style={{ textDecoration: 'none'}} to ="/doctors" ><li>Doctors</li></Link>
+                            <Link className="text-white" style={{ textDecoration: 'none'}} to ="/doctors" ><li>Doctors Profile</li></Link>
                             <Link className="text-white" style={{ textDecoration: 'none'}} to ="/login" ><li>Login</li></Link>
+                            <Link className="text-white" style={{ textDecoration: 'none'}} to ="/pis" ><li>Patient Information System</li></Link>
                         </ul>
                     </Col>
                     <Col className="my-5 text-start" xs={6} md={4}>

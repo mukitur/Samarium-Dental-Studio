@@ -11,7 +11,7 @@ const AboutSection = () => {
             <Container>
                 <Row>
                     <Col xs={12} md={6} >
-                        <img src ={homeAboutSectionImg} width="100%" height="auto"  alt ="" />
+                        <img className="rounded" src ={homeAboutSectionImg} width="100%" height="auto"  alt ="" />
                     </Col>
                     <Col xs={12} md={6}>
                         <h2 className="mt-5" style={{color: '#2e7fc2'}}>Welcome to Samarium Dental Studio</h2>

@@ -10,7 +10,7 @@ const Banner = () => {
            <Card className="bg-dark text-dark">
             <Card.Img src= {bgImage} alt="Card image" />
             <Card.ImgOverlay>
-              <Card.Title><h1 style={{fontSize: '30px'}} className="mt-4">WE <span className="text-primary" >CARE</span> FOR  <br/> YOUR SMILE</h1></Card.Title>
+              <Card.Title><h1 className="mt-4 fs-1 fw-bolder">WE <span className="text-primary" >CARE</span> FOR  <br/> YOUR SMILE</h1></Card.Title>
               <Link to = "/appoinments">
                         <Button variant="primary" size="lg"> Get Appointment </Button>
                         </Link>

@@ -15,7 +15,7 @@ const Service = ({service}) => {
                         <Card.Text>
                             {short_description}
                         </Card.Text>
-                        <Link to = {`/services/${id}`}><Button variant="info">Book for {name}</Button></Link>
+                        <Link to = {`/services/${id}`}><Button variant="warning">Book for {name}</Button></Link>
                         </Card.Body>
                     </Card>
                 </Col>
