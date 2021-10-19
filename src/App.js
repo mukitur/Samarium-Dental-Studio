@@ -14,6 +14,7 @@ import DetailService from './Pages/Home/Home/DetailService/DetailService';
 import Login from './Pages/Login/Login/Login';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivatrRoute/PrivateRoute';
+import PatientInfo from './Pages/PatientInfo/PatientInfo';
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
             <Route path="/doctors">
                 <Doctors></Doctors>
             </Route>
+            <PrivateRoute path="/pis">
+                <PatientInfo></PatientInfo>
+            </PrivateRoute>
             <Route path ="/login">
                 <Login></Login>
             </Route>

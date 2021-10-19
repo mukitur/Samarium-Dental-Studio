@@ -47,27 +47,27 @@ const Equipments = () => {
                 </Col>    
             </Row>
             <h2 className="my-5 text-warning">Our Healthy Teeth Treatments are:</h2>
-            <Row className="mx-5">
+            <Row className="mx-5 text-start">
                 <Col>
                     <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage
+                    <FontAwesomeIcon icon={faDotCircle} /> Intra oral periapical view <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Acrylic Denture <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Porcelain Fused (Metal Crown/Bridge) <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Aesthetic Filling
                 </Col>
                 <Col>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage
+                    <FontAwesomeIcon icon={faDotCircle} /> Periodontal Curettage <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Pulp Capping <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Children Treatment <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Extraction <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Flexible Denture
                 </Col>
                 <Col>
-                     <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage <br/>
-                    <FontAwesomeIcon icon={faDotCircle} /> Abscess Drainage
+                     <FontAwesomeIcon icon={faDotCircle} /> Root Canal Treatment  <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Operculectomy <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Orthodontic Braces <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Scaling & Polishing <br/>
+                    <FontAwesomeIcon icon={faDotCircle} /> Surgical Extraction
                 </Col>     
             </Row>
             <Link to ="/appoinments">
