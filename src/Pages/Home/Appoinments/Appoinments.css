@@ -1,5 +1,5 @@
 .Appoinments-form {
-    margin: 30px 150px;
+    margin: 10px;
 }
 .Appoinments-form input {
     display: block;
@@ -7,7 +7,7 @@
     padding: 5px;
     border: 1px solid gray;
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
 }
 .error {
     color: red;

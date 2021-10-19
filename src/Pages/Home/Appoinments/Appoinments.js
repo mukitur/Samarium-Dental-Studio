@@ -15,6 +15,8 @@ const Appoinments = () => {
         <div>
         <Container>
             <h2 className="my-5">Please Fillup the following Form for Appoinment</h2>
+            <p>We have professional doctors panel to solve any minor or critical cases. Please feel free to call or contact us. </p>
+            <h3>We are open : <br/> sat-thu: 11AM to 10PM </h3>
             <Row className="text-start">
                 <Col></Col>
                 <Col xs={5}>
