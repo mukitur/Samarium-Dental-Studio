@@ -31,10 +31,10 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
-            <Route path = "/services">
+            <Route exact path = "/services">
               <Services></Services>
             </Route>
-            <PrivateRoute path='/detailservice/:serviceId'>
+            <PrivateRoute path='/services/:serviceId'>
                 <DetailService></DetailService>
             </PrivateRoute>
             <Route path="/contact">
