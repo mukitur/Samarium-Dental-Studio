@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged,signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged,signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import initializeAuthentication from '../Pages/Login/Firebase/Firebase.init';
 
 
@@ -49,6 +49,7 @@ const useFirebase = () => {
         .then(result=>{
             const user= result.user;
             setError('');
+            verifyEmail();
         })
         .catch(error=>{
             setError(error.message)
@@ -63,6 +64,14 @@ const useFirebase = () => {
             .catch(error=>{
                 setError(error.message)
             })
+    }
+
+    //check email verification
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+        .then(result=>{
+            console.log(result);
+        })
     }
     // end password login
     //signin with Google
