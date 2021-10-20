@@ -35,7 +35,7 @@ const DetailService = () => {
                         <div className="p-3 bg-white">
                             <h3 >Name: {singleService?.name}</h3>
                             <p>Service Description: {singleService?.description}</p>
-                            <h4>Time Duration: {singleService?.required_time}</h4>
+                            <h4>Time Duration: {singleService?.required_time} Hour</h4>
                             <h4>Price: BDT{singleService?.price}</h4>
                             <p><Link to = "/doctors">
                                 <Button variant="warning" size="lg"> View Doctors Profile </Button>
