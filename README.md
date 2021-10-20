@@ -17,3 +17,5 @@ This a Dental clinic website. This dental clinic has experienced doctor to serve
 ## Bonus Time Update?
 * Polish and Furnish on UI
 * works on Menu 
+* fine tune on responsive
+* FakeData Updated
